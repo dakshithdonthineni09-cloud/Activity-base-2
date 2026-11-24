@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumen Academy: Online Courses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#top">Lumen Academy</a>
+  <nav aria-label="Main">
+    <a href="#categories">Categories</a>
+    <a href="#courses">Courses</a>
+    <a href="#instructors">Instructors</a>
+    <a href="#reviews">Reviews</a>
+    <a class="btn small" href="#enroll">Enroll</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Learn a skill you can use by Friday.</h1>
+      <p>Short, practical video courses taught by working professionals. Study at your own pace, on any device.</p>
+      <form class="search" role="search" onsubmit="return false">
+        <label class="sr" for="q">Search courses</label>
+        <input id="q" type="search" placeholder="Try “Python” or “UX design”">
+        <button class="btn" type="submit">Search courses</button>
+      </form>
+    </div>
+    <aside class="progress-card" aria-label="Example of your learning progress">
+      <p class="small-label">Continue learning</p>
+      <h2>Python for Beginners</h2>
+      <p>Lesson 7: Loops and lists</p>
+      <div class="bar" role="img" aria-label="58 percent complete"><span style="width:58%"></span></div>
+      <p class="pct">58% complete · 4 h 10 min left</p>
+    </aside>
+  </section>
+
+  <section id="categories" class="section">
+    <h2>Browse by category</h2>
+    <ul class="cats">
+      <li><a href="#courses"><b>Programming</b>42 courses</a></li>
+      <li><a href="#courses"><b>Design</b>28 courses</a></li>
+      <li><a href="#courses"><b>Business</b>35 courses</a></li>
+      <li><a href="#courses"><b>Data and AI</b>24 courses</a></li>
+      <li><a href="#courses"><b>Marketing</b>19 courses</a></li>
+      <li><a href="#courses"><b>Languages</b>16 courses</a></li>
+    </ul>
+  </section>
+
+  <section id="courses" class="section tint">
+    <h2>Popular courses</h2>
+    <div class="grid courses">
+      <article>
+        <p class="tag">Programming</p>
+        <h3>Python for Beginners</h3>
+        <p class="by">with Dr. Ananya Rao</p>
+        <p class="meta">12 hours · Beginner · Rated 4.8</p>
+        <p class="price">₹1,999</p>
+      </article>
+      <article>
+        <p class="tag">Design</p>
+        <h3>UX Design Essentials</h3>
+        <p class="by">with Kiran Mehta</p>
+        <p class="meta">9 hours · Beginner · Rated 4.7</p>
+        <p class="price">₹1,799</p>
+      </article>
+      <article>
+        <p class="tag">Data and AI</p>
+        <h3>Data Analysis with Excel and SQL</h3>
+        <p class="by">with Priya Nair</p>
+        <p class="meta">14 hours · Intermediate · Rated 4.9</p>
+        <p class="price">₹2,299</p>
+      </article>
+      <article>
+        <p class="tag">Business</p>
+        <h3>Start and Run a Small Business</h3>
+        <p class="by">with Suresh Varma</p>
+        <p class="meta">8 hours · Beginner · Rated 4.6</p>
+        <p class="price">₹1,499</p>
+      </article>
+      <article>
+        <p class="tag">Marketing</p>
+        <h3>Social Media Marketing</h3>
+        <p class="by">with Meera Joshi</p>
+        <p class="meta">7 hours · Beginner · Rated 4.5</p>
+        <p class="price">₹1,299</p>
+      </article>
+      <article>
+        <p class="tag">Languages</p>
+        <h3>Spoken English for Work</h3>
+        <p class="by">with Daniel Thomas</p>
+        <p class="meta">10 hours · All levels · Rated 4.7</p>
+        <p class="price">₹999</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="info" class="section">
+    <div class="info-wrap">
+      <div>
+        <h2>Inside Python for Beginners</h2>
+        <p class="lead">Write your first working program in the first hour. By the end you will have built three small projects.</p>
+        <dl class="facts">
+          <div><dt>Length</dt><dd>12 hours, 48 lessons</dd></div>
+          <div><dt>Level</dt><dd>Beginner, no coding needed</dd></div>
+          <div><dt>Access</dt><dd>Lifetime, on web and mobile</dd></div>
+          <div><dt>Certificate</dt><dd>Included on completion</dd></div>
+        </dl>
+      </div>
+      <div class="syllabus">
+        <h3>Course outline</h3>
+        <details open>
+          <summary>Module 1: Getting started</summary>
+          <p>Install Python, run your first script and learn how variables store data.</p>
+        </details>
+        <details>
+          <summary>Module 2: Making decisions</summary>
+          <p>Use conditions, comparisons and loops to control what your program does.</p>
+        </details>
+        <details>
+          <summary>Module 3: Working with data</summary>
+          <p>Store and search information with lists, dictionaries and files.</p>
+        </details>
+        <details>
+          <summary>Module 4: Projects</summary>
+          <p>Build a budget tracker, a quiz game and a simple web scraper.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="instructors" class="section tint">
+    <h2>Learn from working professionals</h2>
+    <div class="grid people">
+      <article>
+        <div class="avatar" aria-hidden="true">AR</div>
+        <h3>Dr. Ananya Rao</h3>
+        <p class="role">Software engineer</p>
+        <p>Fifteen years building data systems. Has taught more than 40,000 students.</p>
+      </article>
+      <article>
+        <div class="avatar" aria-hidden="true">KM</div>
+        <h3>Kiran Mehta</h3>
+        <p class="role">Product designer</p>
+        <p>Leads design at a fintech startup and mentors new designers every month.</p>
+      </article>
+      <article>
+        <div class="avatar" aria-hidden="true">PN</div>
+        <h3>Priya Nair</h3>
+        <p class="role">Data analyst</p>
+        <p>Turns messy spreadsheets into clear reports. Former analyst at a national retailer.</p>
+      </article>
+      <article>
+        <div class="avatar" aria-hidden="true">SV</div>
+        <h3>Suresh Varma</h3>
+        <p class="role">Founder and advisor</p>
+        <p>Started three companies and now advises first-time founders on money and hiring.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <h2>What students say</h2>
+    <div class="grid reviews">
+      <figure>
+        <blockquote>I had never written code. Three weeks in, I automated a report that took me two hours every Monday.</blockquote>
+        <figcaption>Ravi, accounts executive<br><span>Python for Beginners · 5 stars</span></figcaption>
+      </figure>
+      <figure>
+        <blockquote>Short lessons and real exercises. I used my course project in a job interview and got the offer.</blockquote>
+        <figcaption>Divya, junior designer<br><span>UX Design Essentials · 5 stars</span></figcaption>
+      </figure>
+      <figure>
+        <blockquote>Clear, calm teaching. I wish the SQL module had more practice sets, but the support team added some after I asked.</blockquote>
+        <figcaption>Imran, operations analyst<br><span>Data Analysis · 4 stars</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="enroll" class="section tint">
+    <h2>Choose how you want to learn</h2>
+    <p class="lead">Every option comes with a 14-day refund window.</p>
+    <div class="grid plans">
+      <article>
+        <h3>Single course</h3>
+        <p class="price">From ₹999</p>
+        <ul>
+          <li>One course, yours for life</li>
+          <li>Certificate on completion</li>
+          <li>Community Q&amp;A</li>
+        </ul>
+        <a class="btn ghost" href="#start">Buy a course</a>
+      </article>
+      <article class="featured">
+        <p class="badge">Best value</p>
+        <h3>All-access monthly</h3>
+        <p class="price">₹999<span>/month</span></p>
+        <ul>
+          <li>Every course in the library</li>
+          <li>New courses each month</li>
+          <li>Instructor office hours</li>
+          <li>Cancel any time</li>
+        </ul>
+        <a class="btn" href="#start">Start all-access</a>
+      </article>
+      <article>
+        <h3>Team plan</h3>
+        <p class="price">₹799<span>/seat/month</span></p>
+        <ul>
+          <li>For 5 or more learners</li>
+          <li>Progress dashboard</li>
+          <li>Custom learning paths</li>
+        </ul>
+        <a class="btn ghost" href="#start">Talk to us</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="start" class="section">
+    <div class="join-wrap">
+      <div>
+        <h2>Create your free account</h2>
+        <p class="lead">Preview the first lesson of any course before you pay. No card needed.</p>
+      </div>
+      <form id="regForm" novalidate>
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="interest">Area of interest</label>
+        <select id="interest" name="interest" required>
+          <option value="">Select a category</option>
+          <option>Programming</option>
+          <option>Design</option>
+          <option>Business</option>
+          <option>Data and AI</option>
+          <option>Marketing</option>
+          <option>Languages</option>
+        </select>
+        <button class="btn" type="submit">Create free account</button>
+        <p id="msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><p>© 2026 Lumen Academy. All rights reserved.</p></footer>
+
+<script>
+document.getElementById('regForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var f = e.target, msg = document.getElementById('msg');
+  if (!f.checkValidity()) {
+    msg.textContent = 'Please enter your name, a valid email and a category.';
+    msg.className = 'error';
+    return;
+  }
+  msg.textContent = 'Welcome, ' + f.name.value + '. Check your email to start your first lesson.';
+  msg.className = 'ok';
+  f.reset();
+});
+</script>
+</body>
+</html>
